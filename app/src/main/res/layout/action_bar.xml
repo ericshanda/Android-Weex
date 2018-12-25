@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#259bd3">
+
+    <ImageButton
+        android:id="@+id/image_left"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/scan"
+        android:layout_marginRight="12dp"
+        android:padding="6dp"
+        android:gravity="center"
+        android:layout_gravity="right|center"
+        android:visibility="gone"
+        />
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="标题"
+        android:gravity="center"
+        android:textColor="#ffffff"
+        android:layout_gravity="center"
+        android:textSize="18sp"
+        />
+
+    <ImageButton
+        android:id="@+id/image_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/back"
+        android:layout_marginLeft="12dp"
+        android:padding="6dp"
+        android:gravity="center"
+        android:layout_gravity="left|center"
+        android:visibility="visible"
+        />
+
+
+</FrameLayout>

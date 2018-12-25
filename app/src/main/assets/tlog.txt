@@ -1,0 +1,213 @@
+OnLineMonitor: 检测到线程调度有明显阻塞! 
+accs.NetworkThread_Agoo:  0 try connect, need sleep 
+accs.NetworkThread_Agoo:  0 try connect, force = true failTimes = 0 
+accs.NetworkThread_Agoo:  0 send:PING status:3 
+accs.ServiceImpl:  tryConnect appkey:20000037 configTag:default|0 
+accs.ServiceImpl:  tryConnect appkey:24873917 configTag:Agoo|0 
+accs.NetworkThread_Agoo:  0 NetworkThread run 
+accs.SilenceConn_Agoo:  0 start thread 
+accs.SilenceConn_Agoo:  init awcn success! 
+awcn.GlobalAppRuntimeInfo:   CurrentProcess:com.emas.demo TargetProcess:com.emas.demo 
+awcn.Config:  duplicated config exist! appkey:24873917 env:ONLINE 
+accs.OrangeAdapter:  isTnetLogOff result:true 
+accs.LoadSoFailUtil:  getSoFailTimes times:0 
+accs.BaseIntentService:  is clear all msg=false 
+accs.BaseIntentService:  is report cache msg,Config.isReportCacheMsg(mContext)=false 
+accs.BaseIntentService:  onHandleIntent,action=org.agoo.android.intent.action.REPORT,agooCommand=com.emas.demo.intent.action.COMMAND,mipushCommand=com.emas.demo.intent.thirdPush.action.COMMAND 
+awcn.HttpDispatcher:  invalid parameter 
+accs.SilenceConn_Agoo:  0 getChannelHost:accscdn4public.m.taobao.com 
+accs.Utils:  getMode mode:0 
+accs.ElectionServiceImpl:  getConnection configTag:Agoo 
+accs.Utils:  setMode mode:0 
+accs.ElectionServiceImpl:  try to saveAppKey configTag:Agoo appkey:24873917 appSecret:3972086eac435b0327764575552b197c ttid:aliyun pkg:com.emas.demo 
+accs.LoadSoFailUtil:  getSoFailTimes times:0 
+accs.ServiceImpl:  onHostStartCommand:Intent { act=com.taobao.accs.intent.action.START_SERVICE cmp=com.emas.demo/com.taobao.accs.ChannelService (has extras) } 
+accs.ElectionServiceImpl:  onStartCommand begin action:com.taobao.accs.intent.action.START_SERVICE 
+accs.Config:  getAgooAppKey appkey:24873917 
+accs.NetworkThread_default:  0 try connect, need sleep 
+accs.NetworkThread_default:  0 try connect, force = true failTimes = 0 
+accs.HeartbeatManager:  hb use job 
+accs.NetworkThread_default:  0 send:PING status:3 
+accs.ServiceImpl:  tryConnect appkey:20000037 configTag:default|0 
+accs.NetworkThread_default:  0 NetworkThread run 
+accs.SilenceConn_default:  0 start thread 
+accs.SilenceConn_default:  init awcn success! 
+awcn.GlobalAppRuntimeInfo:   CurrentProcess:com.emas.demo TargetProcess:com.emas.demo 
+awcn.Config:  duplicated config exist! appkey:20000037 env:ONLINE 
+accs.OrangeAdapter:  isTnetLogOff result:true 
+accs.LoadSoFailUtil:  getSoFailTimes times:0 
+awcn.HttpDispatcher:  invalid parameter 
+accs.SilenceConn_default:  0 getChannelHost:accscdn.m.taobao.com 
+accs.BaseIntentService:  is clear all msg=false 
+accs.BaseIntentService:  is report cache msg,Config.isReportCacheMsg(mContext)=false 
+accs.BaseIntentService:  onHandleIntent,action=org.agoo.android.intent.action.REPORT,agooCommand=com.emas.demo.intent.action.COMMAND,mipushCommand=com.emas.demo.intent.thirdPush.action.COMMAND 
+accs.Utils:  getMode mode:0 
+accs.ElectionServiceImpl:  getConnection configTag:default 
+accs.Utils:  setMode mode:0 
+accs.ElectionServiceImpl:  try to saveAppKey configTag:default appkey:20000037 appSecret:ecaba42bbb08da5092eb939e58fb5ba0 ttid:1001@DemoApp_Android_1.0 pkg:com.emas.demo 
+accs.LoadSoFailUtil:  getSoFailTimes times:0 
+accs.ServiceImpl:  onHostStartCommand:Intent { act=com.taobao.accs.intent.action.START_SERVICE cmp=com.emas.demo/com.taobao.accs.ChannelService (has extras) } 
+accs.ElectionServiceImpl:  onStartCommand begin action:com.taobao.accs.intent.action.START_SERVICE 
+accs.Config:  getAgooAppKey appkey:24873917 
+Telescope: [memory] memoryRecord.dalvikPss:|7|memoryRecord.nativePss:|9|memoryRecord.totalPss:|63 
+RestApi: send url :ak=20000037&av=1.0&avsys=1.0&c=1001@DemoApp_Android_1.0&d=WV8oIZRsPnoDAJwcljAxCRP+&sv=6.5.1.3 
+OnLineMonitor: 检测到线程调度有明显阻塞! 
+Telescope: [memory] memoryRecord.dalvikPss:|7|memoryRecord.nativePss:|8|memoryRecord.totalPss:|63 
+OnLineMonitor: 检测到线程调度有明显阻塞! 
+EmasInit: bind tag success 
+MPS:SendRequestTask: HTTP Return code: 200 
+EmasInit: init cloudchannel success, deviceId: cf48b5b6d80747899afd29e5655b5cfe 
+MPS:CallbackConvert: [AMS]errorCode:00000 -- process:true -- message:成功 
+MPS:AppRegister: [AMS]work call back: -- code:200 -- message:AneXQozQ8dvVm6cdscv4F9yfs03izVUN-8riD33NlfVj 
+MPS:AppRegister: connState=2;estimatedTime=5229;response=2:200;network=WIFI 
+SendBroadcastPermission: action:channel_initial_info, mPermissionType:0 
+UtilsSDK: Thread Pool is close 
+AliHaAdapter.TLogMonitorImpl: MSG_RECEIVE:RECEIVE MESSAGE:没有对应的任务存在，opcode=RDWP_STARTUP_REPLY 
+TLOG_MONITOR.MSG_RECEIVE: RECEIVE MESSAGE : 没有对应的任务存在，opcode=RDWP_STARTUP_REPLY 
+AliHaAdapter.TLogMonitorImpl: MSG_RECEIVE:RECEIVE MESSAGE:接收消息后，基础信息解析完成 
+TLOG_MONITOR.MSG_RECEIVE: RECEIVE MESSAGE : 接收消息后，基础信息解析完成 
+UTAnalytics:EventRepo: pid:27802 COUNTER, EVENT size:6, 
+TLOG.CommandDataCenter: CommandDataCenter.onData : {"data":{},"headers":{"X-Rdwp-App-Key":"20000037","X-Rdwp-App-Id":"20000037@android","X-Rdwp-Device-Id":"WV8oIZRsPnoDAJwcljAxCRP+","X-Rdwp-Session-Id":"f5e8e94b86e0441098075f24bc27a78d","X-Rdwp-Request-Id":"7fa5ab9202c344689f5d415d1a768b3f","X-Rdwp-Reply-Id":"otqCzkCLSvmrvtkU6zMziQ","X-Rdwp-Reply-Code":"200","X-Rdwp-Op-Code":"RDWP_STARTUP_REPLY"},"type":"REPLY","version":1} 
+AliHaAdapter.TLogMonitorImpl: MSG_RECEIVE:RECEIVE MESSAGE:成功接收到消息 
+TLOG_MONITOR.MSG_RECEIVE: RECEIVE MESSAGE : 成功接收到消息 
+AliHaAdapter.TLogMonitorImpl: MSG_REVEIVE_COUNT:RECEIVE MESSAGE COUNT:成功接收到消息，还未开始处理 
+TLOG_MONITOR.MSG_REVEIVE_COUNT: RECEIVE MESSAGE COUNT : 成功接收到消息，还未开始处理 
+UTAnalytics:EventRepo: pid:27802 COUNTER, EVENT size:5, 
+AliHaAdapter.TLogMonitorImpl: MSG_SEND_COUNT:SEND MESSAGE COUNT:开始发送消息 
+TLOG_MONITOR.MSG_SEND_COUNT: SEND MESSAGE COUNT : 开始发送消息 
+AliHaAdapter.TLogMonitorImpl: MSG_PULL:TLOG.StartUpRequestTask:启动事件：发送启动事件 
+TLOG_MONITOR.MSG_PULL: TLOG.StartUpRequestTask : 启动事件：发送启动事件 
+OnLineMonitor: 检测到线程调度有明显阻塞! 
+BundleInstaller: notify finish ['com.taobao.firstbundle'] 
+System.err:     at android.os.HandlerThread.run(HandlerThread.java:61) 
+System.err:     at android.os.Looper.loop(Looper.java:156) 
+System.err:     at android.os.Handler.dispatchMessage(Handler.java:98) 
+System.err:     at android.os.Handler.handleCallback(Handler.java:761) 
+System.err:     at android.taobao.atlas.framework.BundleInstaller$2.run(BundleInstaller.java:521) 
+System.err:     at android.taobao.atlas.framework.BundleInstaller.call(BundleInstaller.java:604) 
+System.err: java.lang.NullPointerException: Attempt to invoke virtual method 'java.util.List android.taobao.atlas.bundleInfo.BundleListing$BundleInfo.getTotalDependency()' on a null object reference 
+Telescope: [memory] memoryRecord.dalvikPss:|8|memoryRecord.nativePss:|8|memoryRecord.totalPss:|65 
+Telescope: [UploadPlugin] upload file=/storage/emulated/0/Android/data/com.emas.demo/cache/Telescope/log/com.emas.demo/1526603013270/1526603069906.trace true 10240 
+EVENT_TRACE.TELESCOPE: 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 
+RestApi: packRequest success! 
+RestApi: send url :ak=20000037&av=1.0&avsys=1.0&c=1001@DemoApp_Android_1.0&d=WV8oIZRsPnoDAJwcljAxCRP+&sv=6.5.1.3 
+RestApi: RestAPI build data succ! 
+RestApi: RestAPI start send log! 
+OnLineMonitor: 检测到线程调度有明显阻塞! 
+accs.InAppConn_default:  send data  len:302 dataId:2 command:1 host:https://emaspoc-acs.emas-ha.cn utdid:WV8oIZRsPnoDAJwcljAxCRP+ 
+UTAnalytics:EventRepo: pid:27802 STAT, EVENT size:17, 
+UTAnalytics:EventRepo: pid:27802 ALARM, EVENT size:6, 
+awcn.TnetSpdySession: |[seq:20000037.AWCN3_2] spdySessionConnectCB connect connectTime:6 sslTime::0 
+awcn.Session: |[seq:20000037.AWCN3_2] notifyStatus status:AUTH_SUCC 
+awcn.Session: |[seq:20000037.AWCN3_2] notifyStatus status:CONNECTED 
+UTAnalytics:EventRepo: pid:27802 ALARM, EVENT size:5, 
+awcn.Session: |[seq:20000037.AWCN3_2] notifyStatus status:CONNECTING 
+awcn.TnetSpdySession: |[seq:20000037.AWCN3_2] [connect] host:https://emaspoc-acs.emas-ha.cn connect :101.132.94.196:443 sessionId:1526603068494 SpdyProtocol,:http2_0rtt_acs proxyIp,: proxyPort,:0 
+awcn.SessionRequest: |[seq:20000037.AWCN3_2] create connection... Host:https://emaspoc-acs.emas-ha.cn Type:http2_0rtt_acs IP:101.132.94.196 Port:443 heartbeat:45000 session:Session@[20000037.AWCN3_2|http2_0rtt_acs] 
+awcn.TnetSpdySession: |[seq:20000037.AWCN3_1]  errorId::-2611 
+awcn.Session: |[seq:20000037.AWCN3_1] notifyStatus status:CONNETFAIL 
+awcn.Session: |[seq:20000037.AWCN3_1] notifyStatus status:CONNECTING 
+awcn.TnetSpdySession: |[seq:20000037.AWCN3_1] [connect] host:https://emaspoc-acs.emas-ha.cn connect :101.132.94.196:443 sessionId:1526603068479 SpdyProtocol,:http2_0rtt_acs proxyIp,: proxyPort,:0 
+awcn.SessionRequest: |[seq:20000037.AWCN3_1] create connection... Host:https://emaspoc-acs.emas-ha.cn Type:http2_0rtt_acs IP:101.132.94.196 Port:443 heartbeat:45000 session:Session@[20000037.AWCN3_1|http2_0rtt_acs] 
+awcn.HttpDispatcher:  invalid parameter 
+awcn.StrategyTable:  strategy map size:1 
+accs.InAppConn_default:  try send:DATA dataId:2 appkey:20000037 
+OnLineMonitor: 检测到线程调度有明显阻塞! 
+accs.ServiceImpl:  tryConnect no connections 
+accs.BaseIntentService:  is clear all msg=false 
+accs.BaseIntentService:  is report cache msg,Config.isReportCacheMsg(mContext)=false 
+accs.BaseIntentService:  onHandleIntent,action=android.intent.action.USER_PRESENT,agooCommand=com.emas.demo.intent.action.COMMAND,mipushCommand=com.emas.demo.intent.thirdPush.action.COMMAND 
+accs.com.taobao.accs.a.a:  time is daytime, wakeup cpu for keeping connecntion 
+accs.ServiceImpl:  ServiceImpl onCreate ClassLoader:dalvik.system.PathClassLoader[DexPathList[[zip file "/data/app/com.emas.demo-2/base.apk", zip file "/data/app/com.emas.demo-2/split_lib_dependencies_apk.apk", zip file "/data/app/com.emas.demo-2/split_lib_slice_0_apk.apk", zip file "/data/app/com.emas.demo-2/split_lib_slice_1_apk.apk", zip file "/data/app/com.emas.demo-2/split_lib_slice_2_apk.apk", zip file "/data/app/com.emas.demo-2/split_lib_slice_3_apk.apk", zip file "/data/app/com.emas.demo-2/split_lib_slice_4_apk.apk", zip file "/data/app/com.emas.demo-2/split_lib_slice_5_apk.apk", zip file "/data/app/com.emas.demo-2/split_lib_slice_6_apk.apk", zip file "/data/app/com.emas.demo-2/split_lib_slice_7_apk.apk", zip file "/data/app/com.emas.demo-2/split_lib_slice_8_apk.apk", zip file "/data/app/com.emas.demo-2/split_lib_slice_9_apk.apk"],nativeLibraryDirectories=[/data/app/com.emas.demo-2/lib/arm, /system/fake-libs, /data/app/com.emas.demo-2/base.apk!/lib/armeabi, /data/app/com.emas.demo-2/split_lib_dependencies_apk.apk!/lib/armeabi, /data/app/com.emas.demo-2/split_lib_slice_0_apk.apk!/lib/armeabi, /data/app/com.emas.demo-2/split_lib_slice_1_apk.apk!/lib/armeabi, /data/app/com.emas.demo-2/split_lib_slice_2_apk.apk!/lib/armeabi, /data/app/com.emas.demo-2/split_lib_slice_3_apk.apk!/lib/armeabi, /data/app/com.emas.demo-2/split_lib_slice_4_apk.apk!/lib/armeabi, /data/app/com.emas.demo-2/split_lib_slice_5_apk.apk!/lib/armeabi, /data/app/com.emas.demo-2/split_lib_slice_6_apk.apk!/lib/armeabi, /data/app/com.emas.demo-2/split_lib_slice_7_apk.apk!/lib/armeabi, /data/app/com.emas.demo-2/split_lib_slice_8_apk.apk!/lib/armeabi, /data/app/com.emas.demo-2/split_lib_slice_9_apk.apk!/lib/armeabi, /system/lib, /vendor/lib, /system/vendor/lib, /product/lib]]] sdkv:221 procStart:2 
+accs.Utils:  getMode mode:0 
+accs.ACCSManager:  getAppkey:20000037|24873917 
+accs.LoadSoFailUtil:  getSoFailTimes times:0 
+accs.ServiceImpl:  onHostStartCommand:Intent { act=android.intent.action.USER_PRESENT flg=0x24000010 cmp=com.emas.demo/com.taobao.accs.ChannelService } 
+accs.ElectionServiceImpl:  onStartCommand begin action:android.intent.action.USER_PRESENT 
+accs.ElectionServiceImpl:  onCreate, sdkv:221 
+OpenGLRenderer: Initialized EGL, version 1.4 
+Telescope: [memory] memoryRecord.dalvikPss:|7|memoryRecord.nativePss:|8|memoryRecord.totalPss:|48 
+UTAnalytics:EventRepo: pid:27802 COUNTER, EVENT size:4, 
+TLOG.CommandDataCenter: CommandDataCenter.onData :  
+AliHaAdapter.TLogMonitorImpl: MSG_RECEIVE:RECEIVE MESSAGE:成功接收到消息 
+TLOG_MONITOR.MSG_RECEIVE: RECEIVE MESSAGE : 成功接收到消息 
+AliHaAdapter.TLogMonitorImpl: MSG_REVEIVE_COUNT:RECEIVE MESSAGE COUNT:成功接收到消息，还未开始处理 
+TLOG_MONITOR.MSG_REVEIVE_COUNT: RECEIVE MESSAGE COUNT : 成功接收到消息，还未开始处理 
+Telescope: [pageload@LoadTimeCalculate] time cost|pageName=com.taobao.demo.NativeDemoActivity|pageLoadTime=5|isColdOpen=false|pageStartTime=73683356
+AliHaAdapter.TLogMonitorImpl: MSG_PULL:TLOG.PullTask:消息拉取：主动发送消息，拉取任务 
+TLOG_MONITOR.MSG_PULL: TLOG.PullTask : 消息拉取：主动发送消息，拉取任务 
+Telescope: [ReportManager] You should pick a right concrete Bean interface, type: 0x3 
+OnLineMonitor: 内存不足，并且该进程在后台进程列表最后一个，马上就要被清理 
+ZCache.ZCacheMonitor: updateConfig entry isSuccess : true count : 2 
+ZCache.BaseConfigManager: start update zip apps 
+ZCache.PackageApp-ZipAppUpdateManager: updateAppsInfo: 开始更新所有应用信息[count:3] 
+ZCache.PackageApp-ZipAppManager-Folders: ZCache: folders index does not match the local files, indexed [0], local existed [3] 
+ZCache.PackageApp-ZipAppManager-Folders: taobao-mobile-emas-poc-biyan local existed 3 dirs. 
+ZCache.PackageApp-ZipAppManager-Folders: Override update, folders should be clear 
+ZCache.PackageApp-ZipAppManager: taobao-mobile-emas-poc-biyan : mappingUrl : //publish-poc.emas-ha.cn/app/taobao-mobile-emas-poc-biyan/ 
+ZCache.PackageApp-ZipAppManager-Folders: ZCache: folders index does not match the local files, indexed [0], local existed [6] 
+ZCache.PackageApp-ZipAppManager-Folders: taobao-mobile-EMASPOC local existed 6 dirs. 
+ZCache.PackageApp-ZipAppManager-Folders: Override update, folders should be clear 
+ZCache.PackageApp-ZipAppManager: taobao-mobile-EMASPOC : mappingUrl : //publish-poc.emas-ha.cn/app/taobao-mobile-EMASPOC/ 
+ZCache.PackageApp-ZipAppManager-Folders: ZCache: folders index does not match the local files, indexed [0], local existed [4] 
+ZCache.PackageApp-ZipAppManager-Folders: JMFirstWeex-yc_test_open_cache local existed 4 dirs. 
+ZCache.PackageApp-ZipAppManager-Folders: Override update, folders should be clear 
+ZCache.PackageApp-ZipAppManager: JMFirstWeex-yc_test_open_cache : mappingUrl : //publish-poc.emas-ha.cn/app/JMFirstWeex-yc_test_open_cache/ 
+ZCache.PackageApp-ZipPrefixesManager: saveLocalPrefixesData : {"\/\/publish-poc.emas-ha.cn\/app\/":{"taobao-mobile-EMASPOC\/":"taobao-mobile-EMASPOC","taobao-mobile-emas-poc-biyan\/":"taobao-mobile-emas-poc-biyan","JMFirstWeex-yc_test_open_cache\/":"JMFirstWeex-yc_test_open_cache"}} 
+ZCache.PackageApp-ZipPrefixesManager: [taobao-mobile-emas-poc-biyan, taobao-mobile-EMASPOC, JMFirstWeex-yc_test_open_cache] 
+ZCache.PackageApp-ZipPrefixesManager: mergPrefixes : add ://publish-poc.emas-ha.cn/app/;  appPrefix : JMFirstWeex-yc_test_open_cache/ 
+ZCache.PackageApp-ZipPrefixesManager: mergPrefixes : add ://publish-poc.emas-ha.cn/app/;  appPrefix : taobao-mobile-emas-poc-biyan/ 
+ZCache.PackageApp-ZipPrefixesManager: mergPrefixes : add ://publish-poc.emas-ha.cn/app/;  appPrefix : taobao-mobile-EMASPOC/ 
+ZCache.ZipPrefixesManager: zipPrefixes parse success 
+ZCache.PackageApp-ZipPrefixesManager: [taobao-mobile-emas-poc-biyan, taobao-mobile-EMASPOC, JMFirstWeex-yc_test_open_cache] 
+System.err:     at java.lang.Thread.run(Thread.java:776) 
+System.err:     at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:607) 
+System.err:     at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1133) 
+System.err:     at com.taobao.zcache.config.managers.MtopConfigManager$UpdateConfigTask.run(MtopConfigManager.java:144) 
+System.err:     at com.taobao.zcache.config.managers.MtopConfigManager.a(MtopConfigManager.java:35) 
+System.err:     at com.taobao.zcache.config.BaseConfigManager.updateMonitorDiffTime(BaseConfigManager.java:276) 
+System.err:     at com.taobao.zcache.utils.CommonUtils.parseDate(CommonUtils.java:139) 
+System.err:     at java.text.DateFormat.parse(DateFormat.java:358) 
+System.err: java.text.ParseException: Unparseable date: "[Fri, 18 May 2018 00:24:27 GMT]" 
+UTAnalytics:EventRepo: pid:27802 STAT, EVENT size:16, 
+UTAnalytics:EventRepo: pid:27802 STAT, EVENT size:15, 
+mtopsdk.MtopStatistics: [seq:MTOP1]|MtopStatistics 41492081[SumStat(ms)]:apiKey=mtop.client.mudp.dy.update$1.0,httpResponseStatus=200,retCode=SUCCESS,retType=0,mappingCode=null,mtopTotalTime=324,networkTotalTime=320,waitExecuteTime=0,buildParamsTime=1,computeSignTime=0,computeMiniWuaTime=0,computeWuaTime=0,waitCallbackTime=0,cacheSwitch=1,cacheHitType=0,cacheCostTime=0,cacheResponseParseTime=0,oneWayTime_ANet=69,resultCode=200,isRequestSuccess=true,host=emaspoc-aserver.emas-ha.cn,ip_port=,isSSL=false,connType=http,firstDataTime=40,recDataTime=0,sendWaitTime=1,serverRT=0,sendSize=0,recvSize=132,dataSpeed=132,retryTimes=0 
+anet.Repeater: |[seq:MTOP1.HTTP2] [RequestStatistic]ret=1,statusCode=200,msg=SUCCESS,host=emaspoc-aserver.emas-ha.cn,ip=null,port=0,protocolType=http,retryTime=0,retryCostTime=0,processTime=15,connWaitTime=0,cacheTime=0,sendDataTime=14,firstDataTime=40,recDataTime=0,lastProcessTime=0,oneWayTime=69,callbackTime=0,serverRT=0,sendSize=0,recDataSize=132,originalDataSize=132,url=https://emaspoc-aserver.emas-ha.cn/gw/mtop.client.mudp.dy.update/1.0/ 
+anet.Repeater: |[seq:MTOP1.HTTP2] [onFinish]  
+anet.NetworkTask: |[seq:MTOP1.HTTP2] [onFinish] code:200 msg:SUCCESS 
+anet.NetworkTask: |[seq:MTOP1.HTTP2] [onDataReceive] receive last data chunk! 
+anet.NetworkTask: |[seq:MTOP1.HTTP2] [onDataReceive] receive first data chunk! 
+anet.Repeater: |[seq:MTOP1.HTTP2] [onResponseCode] 
+anet.NetworkTask: |[seq:MTOP1.HTTP2] onResponseCode headers:{null=[HTTP/1.1 200 OK], X-Android-Sent-Millis=[1526603066916], Content-Type=[application/json; charset=UTF-8], X-Android-Selected-Protocol=[http/1.1], Date=[Fri, 18 May 2018 00:24:27 GMT], x-retcode=[SUCCESS], Server=[Tengine/Aserver/3.0.205_20171221142538], Transfer-Encoding=[chunked], X-Android-Response-Source=[NETWORK 200], Connection=[keep-alive], X-Android-Received-Millis=[1526603066955]} 
+anet.NetworkTask: |[seq:MTOP1.HTTP2] onResponseCode code:200 
+awcn.HttpSession: |[seq:MTOP1.HTTP2]  response headers:{null=[HTTP/1.1 200 OK], X-Android-Sent-Millis=[1526603066916], Content-Type=[application/json; charset=UTF-8], X-Android-Selected-Protocol=[http/1.1], Date=[Fri, 18 May 2018 00:24:27 GMT], x-retcode=[SUCCESS], Server=[Tengine/Aserver/3.0.205_20171221142538], Transfer-Encoding=[chunked], X-Android-Response-Source=[NETWORK 200], Connection=[keep-alive], X-Android-Received-Millis=[1526603066955]} 
+awcn.HttpSession: |[seq:MTOP1.HTTP2]  httpStatusCode:200 
+awcn.HttpConnector: |[seq:MTOP1.HTTP2]  response headers:{null=[HTTP/1.1 200 OK], X-Android-Sent-Millis=[1526603066916], Content-Type=[application/json; charset=UTF-8], X-Android-Selected-Protocol=[http/1.1], Date=[Fri, 18 May 2018 00:24:27 GMT], x-retcode=[SUCCESS], Server=[Tengine/Aserver/3.0.205_20171221142538], Transfer-Encoding=[chunked], X-Android-Response-Source=[NETWORK 200], Connection=[keep-alive], X-Android-Received-Millis=[1526603066955]} 
+UTAnalytics:EventRepo: pid:27802 STAT, EVENT size:14, 
+awcn.HttpConnector: |[seq:MTOP1.HTTP2]  response code:200 
+ZCache.MtopConfigManager: MtopResponse: MtopResponse[ api=com.alibaba.emas.eweex.zcache.gate,v=1.0,retCode=SUCCESS,retMsg=null,mappingCode=null,mappingCodeSuffix=null,ret=null,data=null,responseCode=200,headerFields={null=[HTTP/1.1 200 OK], X-Android-Sent-Millis=[1526603066928], Content-Type=[application/json; charset=UTF-8], X-Android-Selected-Protocol=[http/1.1], Date=[Fri, 18 May 2018 00:24:27 GMT], x-retcode=[SUCCESS], Server=[Tengine/Aserver/3.0.205_20171221142538], Transfer-Encoding=[chunked], X-Android-Response-Source=[NETWORK 200], Connection=[keep-alive], X-Android-Received-Millis=[1526603066950]},bytedata={"api":"com.alibaba.emas.eweex.zcache.gate","data":{"apps":{"JMFirstWeex-yc_test_open_cache":{"f":5,"s":10533,"t":1525255157121,"v":"0.0.2"},"taobao-mobile-EMASPOC":{"f":5,"s":10577,"t":1526443672670,"v":"0.0.1"},"taobao-mobile-emas-poc-biyan":{"f":5,"s":10580,"t":1526511433409,"v":"0.1.5.5"}},"i":"-1","prefixes":{"//publish-poc.emas-ha.cn/app/":{"taobao-mobile-EMASPOC/":"taobao-mobile-EMASPOC","JMFirstWeex-yc_test_open_cache/":"JMFirstWeex-yc_test_open_cache","taobao-mobile-emas-poc-biyan/":"taobao-mobile-emas-poc-biyan"}},"v":"1526511433409.a"},"ret":["SUCCESS::调用成功"],"systime":0,"v":"1.0"}] 
+mtopsdk.MtopStatistics: [seq:MTOP2]|MtopStatistics 221484[SumStat(ms)]:apiKey=com.alibaba.emas.eweex.zcache.gate$1.0,httpResponseStatus=200,retCode=SUCCESS,retType=0,mappingCode=null,mtopTotalTime=315,networkTotalTime=313,waitExecuteTime=0,buildParamsTime=1,computeSignTime=1,computeMiniWuaTime=0,computeWuaTime=0,waitCallbackTime=0,cacheSwitch=1,cacheHitType=0,cacheCostTime=0,cacheResponseParseTime=0,oneWayTime_ANet=67,resultCode=200,isRequestSuccess=true,host=emaspoc-aserver.emas-ha.cn,ip_port=,isSSL=false,connType=http,firstDataTime=24,recDataTime=0,sendWaitTime=5,serverRT=0,sendSize=0,recvSize=607,dataSpeed=607,retryTimes=1 
+UTAnalytics:EventRepo: pid:27802 STAT, EVENT size:13, 
+anet.Repeater: |[seq:MTOP2.HTTP1] [RequestStatistic]ret=1,statusCode=200,msg=SUCCESS,host=emaspoc-aserver.emas-ha.cn,ip=null,port=0,protocolType=http,retryTime=1,retryCostTime=27,processTime=7,connWaitTime=0,cacheTime=0,sendDataTime=8,firstDataTime=24,recDataTime=0,lastProcessTime=1,oneWayTime=67,callbackTime=0,serverRT=0,sendSize=0,recDataSize=607,originalDataSize=607,url=https://emaspoc-aserver.emas-ha.cn/gw/com.alibaba.emas.eweex.zcache.gate/1.0/ 
+anet.Repeater: |[seq:MTOP2.HTTP1] [onFinish]  
+anet.NetworkTask: |[seq:MTOP2.HTTP1] [onFinish] code:200 msg:SUCCESS 
+anet.NetworkTask: |[seq:MTOP2.HTTP1] [onDataReceive] receive last data chunk! 
+anet.NetworkTask: |[seq:MTOP2.HTTP1] [onDataReceive] receive first data chunk! 
+anet.Repeater: |[seq:MTOP2.HTTP1] [onResponseCode] 
+anet.NetworkTask: |[seq:MTOP2.HTTP1] onResponseCode headers:{null=[HTTP/1.1 200 OK], X-Android-Sent-Millis=[1526603066928], Content-Type=[application/json; charset=UTF-8], X-Android-Selected-Protocol=[http/1.1], Date=[Fri, 18 May 2018 00:24:27 GMT], x-retcode=[SUCCESS], Server=[Tengine/Aserver/3.0.205_20171221142538], Transfer-Encoding=[chunked], X-Android-Response-Source=[NETWORK 200], Connection=[keep-alive], X-Android-Received-Millis=[1526603066950]} 
+anet.NetworkTask: |[seq:MTOP2.HTTP1] onResponseCode code:200 
+awcn.HttpSession: |[seq:MTOP2.HTTP1]  response headers:{null=[HTTP/1.1 200 OK], X-Android-Sent-Millis=[1526603066928], Content-Type=[application/json; charset=UTF-8], X-Android-Selected-Protocol=[http/1.1], Date=[Fri, 18 May 2018 00:24:27 GMT], x-retcode=[SUCCESS], Server=[Tengine/Aserver/3.0.205_20171221142538], Transfer-Encoding=[chunked], X-Android-Response-Source=[NETWORK 200], Connection=[keep-alive], X-Android-Received-Millis=[1526603066950]} 
+awcn.HttpSession: |[seq:MTOP2.HTTP1]  httpStatusCode:200 
+awcn.HttpConnector: |[seq:MTOP2.HTTP1]  response headers:{null=[HTTP/1.1 200 OK], X-Android-Sent-Millis=[1526603066928], Content-Type=[application/json; charset=UTF-8], X-Android-Selected-Protocol=[http/1.1], Date=[Fri, 18 May 2018 00:24:27 GMT], x-retcode=[SUCCESS], Server=[Tengine/Aserver/3.0.205_20171221142538], Transfer-Encoding=[chunked], X-Android-Response-Source=[NETWORK 200], Connection=[keep-alive], X-Android-Received-Millis=[1526603066950]} 
+awcn.HttpConnector: |[seq:MTOP2.HTTP1]  response code:200 
+UTAnalytics:EventRepo: pid:27802 STAT, EVENT size:12, 
+UTAnalytics:EventRepo: pid:27802 STAT, EVENT size:11, 
+UTAnalytics:EventRepo: pid:27802 STAT, EVENT size:10, 
+mtopsdk.MtopStatistics: [seq:MTOP3]|MtopStatistics 141903410[SumStat(ms)]:apiKey=mtop.client.mudp.dy.update$1.0,httpResponseStatus=-406,retCode=ANDROID_SYS_NETWORK_ERROR,retType=1,mappingCode=-406AEC10001,mtopTotalTime=99,networkTotalTime=94,waitExecuteTime=1,buildParamsTime=1,computeSignTime=1,computeMiniWuaTime=0,computeWuaTime=0,waitCallbackTime=0,cacheSwitch=1,cacheHitType=0,cacheCostTime=0,cacheResponseParseTime=0,oneWayTime_ANet=44,resultCode=-406,isRequestSuccess=false,host=emaspoc-aserver.emas-ha.cn,ip_port=,isSSL=false,connType=http,firstDataTime=0,recDataTime=0,sendWaitTime=5,serverRT=0,sendSize=0,recvSize=0,dataSpeed=0,retryTimes=1 
+mtopsdk.MtopStatistics: [seq:MTOP3]|[registerMtopStats]register MtopStats executed.uploadStats=mtopsdk.mtop.stat.a@4e3e3d 
+mtopsdk.AbstractFilterManager: [seq:MTOP3]|[callback]execute AfterFilter: mtopsdk.NetworkErrorAfterFilter,result=STOP 
+mtopsdk.ErrorCodeMappingAfterFilter: [seq:MTOP3]|api=mtop.client.mudp.dy.update , v=1.0 , retCode=ANDROID_SYS_NETWORK_ERROR , retMsg=网络竟然崩溃了 , mappingCode=-406AEC10001 , responseHeader=null 
+mtopsdk.NetworkErrorAfterFilter: [seq:MTOP3]|api=mtop.client.mudp.dy.update,v=1.0,retCode =ANDROID_SYS_NETWORK_ERROR,responseCode =-406,responseHeader=null 
+OnLineMonitor: 检测到CPU占用过高!System=100%, Pid=0% 
+OnLineMonitor: 检测到线程调度有明显阻塞! 
+anet.Repeater: |[seq:MTOP3.HTTP3] [RequestStatistic]ret=0,statusCode=-406,msg=连接异常,host=emaspoc-aserver.emas-ha.cn,ip=null,port=0,protocolType=http,retryTime=1,retryCostTime=25,processTime=7,connWaitTime=0,cacheTime=0,sendDataTime=0,firstDataTime=0,recDataTime=0,lastProcessTime=3,oneWayTime=44,callbackTime=0,serverRT=0,sendSize=0,recDataSize=0,originalDataSize=0,url=https://emaspoc-aserver.emas-ha.cn/gw/mtop.client.mudp.dy.update/1.0/ 

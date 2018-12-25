@@ -1,0 +1,308 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="2dp"
+    tools:context="com.taobao.demo.ConfigOverviewActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="1dp"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#333"
+            android:textSize="14sp"
+            android:text="[AppKey字段] AppKey"/>
+
+        <TextView
+            android:id="@+id/appkey"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#c84343"
+            android:textSize="12sp"
+            android:text=" -"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="1dp"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#333"
+            android:textSize="14sp"
+            android:text="[AppSecret字段] AppSecret字段"/>
+
+        <TextView
+            android:id="@+id/appSecret"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#c84343"
+            android:textSize="12sp"
+            android:text=" -"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="1dp"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#333"
+            android:textSize="14sp"
+            android:text="[ChannelID字段] 渠道ID"/>
+
+        <TextView
+            android:id="@+id/channelID"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#c84343"
+            android:textSize="12sp"
+            android:text=" -"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="1dp"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#333"
+            android:textSize="14sp"
+            android:text="[UseHTTP字段] 是否实用HTTP协议发送请求"/>
+
+        <TextView
+            android:id="@+id/useHttp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#c84343"
+            android:textSize="12sp"
+            android:text=" -"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="1dp"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#333"
+            android:textSize="14sp"
+            android:text="[ACCSDomain字段] ACCS通道域名"/>
+
+        <TextView
+            android:id="@+id/accsDomain"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#c84343"
+            android:textSize="12sp"
+            android:text=" -"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="1dp"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#333"
+            android:textSize="14sp"
+            android:text="[MTOPDomain字段] MTOP网关域名"/>
+
+        <TextView
+            android:id="@+id/mtopDomain"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#c84343"
+            android:textSize="12sp"
+            android:text=" -"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="1dp"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#333"
+            android:textSize="14sp"
+            android:text="[ZCacheUrl字段] 预加载地址前缀"/>
+
+        <TextView
+            android:id="@+id/zcacheUrl"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#c84343"
+            android:textSize="12sp"
+            android:text=" -"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="1dp"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#333"
+            android:textSize="14sp"
+            android:text="[HA OSSBucketName字段] 高可用OSS BucketName"/>
+
+        <TextView
+            android:id="@+id/haBucketName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#c84343"
+            android:textSize="12sp"
+            android:text=" -"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="1dp"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#333"
+            android:textSize="14sp"
+            android:text="[HA UniversalHost字段] 高可用ADash域名"/>
+
+        <TextView
+            android:id="@+id/haAdash"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#c84343"
+            android:textSize="12sp"
+            android:text=" -"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="1dp"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#333"
+            android:textSize="14sp"
+            android:text="[HA RSAPublicKey字段] 高可用 RSA"/>
+
+        <TextView
+            android:id="@+id/haRsa"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#c84343"
+            android:textSize="12sp"
+            android:text=" -"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="1dp"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#333"
+            android:textSize="14sp"
+            android:text="[Network IPStrategy] 网络策略"/>
+
+        <TextView
+            android:id="@+id/ipStrategy"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#c84343"
+            android:textSize="12sp"
+            android:text=" -"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="1dp"
+        android:visibility="gone"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#333"
+            android:textSize="14sp"
+            android:text="[RemoteConfig Domain字段] 配置服务网关域名"/>
+
+        <TextView
+            android:id="@+id/remoteConfig"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#c84343"
+            android:textSize="12sp"
+            android:text=" -"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="1dp"
+        android:visibility="visible"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#333"
+            android:textSize="14sp"
+            android:text="应用版本"/>
+
+        <TextView
+            android:id="@+id/versionCode"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#c84343"
+            android:textSize="12sp"
+            android:text=" -"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="1dp"
+        android:visibility="visible"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#333"
+            android:textSize="14sp"
+            android:text="应用名"/>
+
+        <TextView
+            android:id="@+id/versionName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#c84343"
+            android:textSize="12sp"
+            android:text=" -"/>
+    </LinearLayout>
+
+</LinearLayout>

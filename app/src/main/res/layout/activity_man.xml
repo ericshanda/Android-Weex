@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.taobao.demo.man.MANActivity"
+    tools:layout_editor_absoluteY="81dp">
+
+    <Button
+        android:id="@+id/button5"
+        android:layout_width="231dp"
+        android:layout_height="43dp"
+        android:layout_below="@+id/button4"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:text="用户注册"
+        tools:layout_editor_absoluteX="49dp"
+        tools:layout_editor_absoluteY="271dp"/>
+
+    <Button
+        android:id="@+id/button4"
+        android:layout_width="231dp"
+        android:layout_height="43dp"
+        android:layout_below="@+id/button3"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="19dp"
+        android:text="自定义埋点"
+        tools:layout_editor_absoluteX="49dp"
+        tools:layout_editor_absoluteY="215dp"/>
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="231dp"
+        android:layout_height="43dp"
+        android:layout_below="@+id/button2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="22dp"
+        android:text="页面基础埋点"
+        tools:layout_editor_absoluteX="49dp"
+        tools:layout_editor_absoluteY="105dp"/>
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="231dp"
+        android:layout_height="43dp"
+        android:layout_below="@+id/button6"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="13dp"
+        android:text="页面辅助埋点"
+        tools:layout_editor_absoluteX="49dp"
+        tools:layout_editor_absoluteY="55dp"/>
+
+    <Button
+        android:id="@+id/button6"
+        android:layout_width="231dp"
+        android:layout_height="43dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="37dp"
+        android:text="用户登录"
+        tools:layout_editor_absoluteX="49dp"
+        tools:layout_editor_absoluteY="160dp"/>
+
+</RelativeLayout>

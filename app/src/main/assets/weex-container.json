@@ -1,0 +1,11 @@
+{
+  "TabSize": "4",
+  "JsSource": [
+    "index.js",
+    "filance.js",
+    "life.js",
+    "activity.js",
+    "mine.js"
+  ],
+  "ScaffoldType": "6",
+}

@@ -1,0 +1,527 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="应用参数:"
+            android:textColor="@color/color_text_blue"></TextView>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/appkey"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:maxLines="1"
+                android:minLines="1"
+                android:padding="2dp"
+                android:text="AppKey:"
+                android:textColor="@color/color_text_333"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/appk"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/appkey"
+                android:maxLines="1"
+                android:minLines="1"
+                android:padding="2dp"
+                android:text="1111"
+                android:textColor="@color/color_text_333"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/appsecret"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/appkey"
+                android:maxLines="1"
+                android:minLines="1"
+                android:padding="2dp"
+                android:text="AppSecret:"
+                android:textColor="@color/color_text_333"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/appsec"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/appkey"
+                android:layout_toRightOf="@id/appsecret"
+                android:maxLines="1"
+                android:minLines="1"
+                android:padding="2dp"
+                android:text="AppSecret"
+                android:textColor="@color/color_text_333"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/packagename"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/appsecret"
+                android:maxLines="1"
+                android:minLines="1"
+                android:padding="2dp"
+                android:text="包名:"
+                android:textColor="@color/color_text_333"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/pkg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/appsecret"
+                android:layout_toRightOf="@id/packagename"
+                android:maxLines="1"
+                android:minLines="1"
+                android:padding="2dp"
+                android:text="com.xxx.xxx"
+                android:textColor="@color/color_text_333"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/alias"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/packagename"
+                android:maxLines="1"
+                android:minLines="1"
+                android:padding="2dp"
+                android:text="别名:"
+                android:textColor="@color/color_text_333"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/als"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/packagename"
+                android:layout_toRightOf="@id/alias"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:maxLines="2"
+                android:minLines="1"
+                android:hint="比如用户名"
+                android:text="Brant"
+                android:textSize="16sp"
+                android:textColor="@color/color_text_333" />
+
+
+            <TextView
+                android:id="@+id/notify"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/packagename"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@id/als"
+                android:maxLines="1"
+                android:minLines="1"
+                android:padding="2dp"
+                android:text="开启推送:"
+                android:textColor="@color/color_text_333"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/noti"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/packagename"
+                android:layout_toRightOf="@id/notify"
+                android:maxLines="1"
+                android:minLines="1"
+                android:padding="2dp"
+                android:text="xxx"
+                android:textColor="@color/color_text_333"
+                android:textSize="16sp" />
+
+        </RelativeLayout>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="设备信息:"
+            android:textColor="@color/color_text_blue"></TextView>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/brand"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:maxLines="1"
+                android:minLines="1"
+                android:padding="2dp"
+                android:text="品牌:"
+                android:textColor="@color/color_text_333"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/br"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/brand"
+                android:maxLines="1"
+                android:minLines="1"
+                android:padding="2dp"
+                android:text="xxx"
+                android:textColor="@color/color_text_333"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/model"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@id/br"
+                android:maxLines="1"
+                android:minLines="1"
+                android:padding="2dp"
+                android:text="机型:"
+                android:textColor="@color/color_text_333"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/mod"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/model"
+                android:maxLines="1"
+                android:minLines="1"
+                android:padding="2dp"
+                android:text="xxx"
+                android:textColor="@color/color_text_333"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/deviceId"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/brand"
+                android:maxLines="1"
+                android:minLines="1"
+                android:padding="2dp"
+                android:text="设备Id:"
+                android:textColor="@color/color_text_333"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/dev"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/brand"
+                android:layout_toRightOf="@id/deviceId"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:maxLines="2"
+                android:minLines="1"
+                android:text="xxx"
+                android:textColor="@color/color_text_333"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/sysversion"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/dev"
+                android:maxLines="1"
+                android:minLines="1"
+                android:padding="2dp"
+                android:text="Android版本:"
+                android:textColor="@color/color_text_333"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/sysver"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/dev"
+                android:layout_toRightOf="@id/sysversion"
+                android:maxLines="1"
+                android:minLines="1"
+                android:padding="2dp"
+                android:text="xxx"
+                android:textColor="@color/color_text_333"
+                android:textSize="16sp" />
+
+        </RelativeLayout>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="通道信息:"
+            android:layout_marginTop="5dp"
+            android:textColor="@color/color_text_blue"></TextView>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/accs"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="ACCS通道:"
+                android:textColor="#000000"></TextView>
+
+            <TextView
+                android:id="@+id/accshost"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/accs"
+                android:maxLines="1"
+                android:minLines="1"
+                android:padding="2dp"
+                android:text="Host:"
+                android:textColor="@color/color_text_333"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/ho"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/accs"
+                android:layout_toRightOf="@id/accshost"
+
+                android:maxLines="1"
+                android:minLines="1"
+                android:padding="2dp"
+                android:text="xxx"
+                android:textColor="@color/color_text_333"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/accschannel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/accs"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@id/ho"
+                android:maxLines="1"
+                android:minLines="1"
+                android:padding="2dp"
+                android:text="通道:"
+                android:textColor="@color/color_text_333"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/chan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/accs"
+                android:layout_toRightOf="@id/accschannel"
+                android:maxLines="1"
+                android:minLines="1"
+                android:padding="2dp"
+                android:text="xxxx"
+                android:textColor="@color/color_text_333"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/otherchannel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/accschannel"
+                android:maxLines="3"
+                android:minLines="1"
+                android:padding="2dp"
+                android:text="注：厂商通道请在推送控制台根据设备Id查询设备信息，检查该设备是否有对应厂商的token"
+                android:textColor="@color/color_text_333"
+                android:textSize="16sp" />
+
+
+            <!--<TextView-->
+            <!--android:id="@+id/huaweitoken"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_below="@id/accschannel"-->
+            <!--android:maxLines="1"-->
+            <!--android:minLines="1"-->
+            <!--android:padding="2dp"-->
+            <!--android:textSize="16sp"-->
+            <!--android:textColor="#000000"-->
+            <!--android:text="Huawei Token:" />-->
+
+            <!--<TextView-->
+            <!--android:id="@+id/ht"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_below="@id/accschannel"-->
+            <!--android:layout_toRightOf="@id/huaweitoken"-->
+            <!--android:maxLines="1"-->
+            <!--android:minLines="1"-->
+            <!--android:padding="2dp"-->
+            <!--android:textColor="@color/color_text_333"-->
+            <!--android:textSize="16sp"-->
+            <!--android:text="xxx" />-->
+
+            <!--<TextView-->
+            <!--android:id="@+id/xiaomitoken"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_below="@id/huaweitoken"-->
+            <!--android:maxLines="1"-->
+            <!--android:minLines="1"-->
+            <!--android:padding="2dp"-->
+            <!--android:textSize="16sp"-->
+            <!--android:textColor="#000000"-->
+            <!--android:text="Xiaomi Token:" />-->
+
+            <!--<TextView-->
+            <!--android:id="@+id/xmt"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_below="@id/huaweitoken"-->
+            <!--android:layout_toRightOf="@id/xiaomitoken"-->
+            <!--android:maxLines="1"-->
+            <!--android:minLines="1"-->
+            <!--android:padding="2dp"-->
+            <!--android:textColor="@color/color_text_333"-->
+            <!--android:textSize="16sp"-->
+            <!--android:text="xxx" />-->
+
+            <!--<TextView-->
+            <!--android:id="@+id/fcmtoken"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_below="@id/xiaomitoken"-->
+            <!--android:maxLines="1"-->
+            <!--android:minLines="1"-->
+            <!--android:padding="2dp"-->
+            <!--android:textSize="16sp"-->
+            <!--android:textColor="#000000"-->
+            <!--android:text="FCM Token:" />-->
+
+            <!--<TextView-->
+            <!--android:id="@+id/ft"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_below="@id/xiaomitoken"-->
+            <!--android:layout_toRightOf="@id/fcmtoken"-->
+            <!--android:maxLines="1"-->
+            <!--android:minLines="1"-->
+            <!--android:padding="2dp"-->
+            <!--android:textColor="@color/color_text_333"-->
+            <!--android:textSize="16sp"-->
+            <!--android:text="xxx" />-->
+
+            <!--<TextView-->
+            <!--android:id="@+id/meizutoken"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_below="@id/fcmtoken"-->
+            <!--android:maxLines="1"-->
+            <!--android:minLines="1"-->
+            <!--android:padding="2dp"-->
+            <!--android:textSize="16sp"-->
+            <!--android:textColor="#000000"-->
+            <!--android:text="Meizu Token:" />-->
+
+            <!--<TextView-->
+            <!--android:id="@+id/mzt"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_below="@id/fcmtoken"-->
+            <!--android:layout_toRightOf="@id/meizutoken"-->
+            <!--android:maxLines="1"-->
+            <!--android:minLines="1"-->
+            <!--android:padding="2dp"-->
+            <!--android:textColor="@color/color_text_333"-->
+            <!--android:textSize="16sp"-->
+            <!--android:text="xxx" />-->
+
+            <!--<TextView-->
+            <!--android:id="@+id/oppotoken"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_below="@id/meizutoken"-->
+            <!--android:maxLines="1"-->
+            <!--android:minLines="1"-->
+            <!--android:padding="2dp"-->
+            <!--android:textSize="16sp"-->
+            <!--android:textColor="#000000"-->
+            <!--android:text="OPPO Token:" />-->
+
+            <!--<TextView-->
+            <!--android:id="@+id/oppot"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_below="@id/meizutoken"-->
+            <!--android:layout_toRightOf="@id/oppotoken"-->
+            <!--android:maxLines="1"-->
+            <!--android:minLines="1"-->
+            <!--android:padding="2dp"-->
+            <!--android:textColor="@color/color_text_333"-->
+            <!--android:textSize="16sp"-->
+            <!--android:text="xxx" />-->
+
+        </RelativeLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/setAlias"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@color/color_bg_one"
+                android:layout_marginHorizontal="5dp"
+                android:text="绑定别名"
+                android:textColor="@color/color_text_blue" />
+
+            <Button
+                android:id="@+id/removeAlias"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginHorizontal="5dp"
+                android:background="@color/color_bg_one"
+                android:text="解绑别名"
+                android:textColor="@color/color_text_blue" />
+
+            <Button
+                android:id="@+id/enableAgoo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="5dp"
+                android:layout_weight="1"
+                android:background="@color/color_bg_one"
+                android:text="开启推送"
+                android:textColor="@color/color_text_blue" />
+
+            <Button
+                android:id="@+id/disableAgoo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="5dp"
+                android:layout_weight="1"
+                android:background="@color/color_bg_one"
+                android:text="关闭推送"
+                android:textColor="@color/color_text_blue" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+</ScrollView>

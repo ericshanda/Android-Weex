@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="条件列表"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/candidateKey"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="输入条件key"
+            android:singleLine="true" />
+
+        <EditText
+            android:id="@+id/candidateValue"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="输入条件value"
+            android:singleLine="true" />
+
+        <Spinner
+            android:id="@+id/candidateCompare"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:entries="@array/compares" />
+
+        <Button
+            android:id="@+id/save_candidate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:background="@color/color_bg_one"
+            android:onClick="saveCandidate"
+            android:text="添加/更新"
+            android:textColor="@color/color_text_blue" />
+
+    </LinearLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/candidate_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:scrollbars="vertical" />
+
+</LinearLayout>

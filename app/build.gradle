@@ -1,0 +1,314 @@
+apply plugin: 'com.android.application'
+apply plugin: 'com.taobao.android.emas'
+apply plugin: 'com.taobao.sophix.emas'
+
+configurations {
+    providedCompile
+    //all*.exclude group: 'com.android.support', module: 'multidex'
+    all*.exclude group: 'com.taobao.android', module: 'tnet-jni'
+    all*.exclude group: 'com.taobao.android', module: 'tlog_adapter'
+    all*.exclude group: 'com.aliyun.ams', module: 'alicloud-android-utdid'
+}
+
+android {
+    compileSdkVersion 26
+    buildToolsVersion "26.0.2"
+
+    compileOptions.encoding = 'UTF-8'
+
+    signingConfigs {
+        debug {
+            storeFile file(rootProject.rootDir.toString() + DEBUG_STOREFILE)
+            storePassword DEBUG_STOREPASSWORD
+            keyAlias DEBUG_KEYALIAS
+            keyPassword DEBUB_KEYPASSWORD
+        }
+
+        release {
+            storeFile file(rootProject.rootDir.toString() + RELEASE_STOREFILE)
+            storePassword RELEASE_STOREPASSWORD
+            keyAlias RELEASE_KEYALIAS
+            keyPassword RELEASE_KEYPASSWORD
+            v1SigningEnabled true
+            v2SigningEnabled Boolean.valueOf(V2_SIGNING)
+        }
+    }
+
+    defaultConfig {
+        multiDexEnabled true
+        applicationId 'com.example.luyujie.innovationcourse'
+        ndk {
+            abiFilters "x86", "armeabi"  //默认只启用x86,armeabi
+        }
+        resConfigs "en", "fr"
+    }
+
+    dexOptions {
+        jumboMode = true
+        preDexLibraries = true
+        javaMaxHeapSize = '2048m'
+    }
+
+    buildTypes {
+        debug {
+            // debug模式
+            multiDexEnabled true
+            // 是否进行混淆
+            minifyEnabled false
+            proguardFile 'proguard.cfg'
+            signingConfig signingConfigs.debug
+
+        }
+
+        release {
+            multiDexEnabled true
+            shrinkResources false
+            // 是否进行混淆
+            minifyEnabled true
+            proguardFile 'proguard.cfg'
+            signingConfig signingConfigs.release
+
+        }
+    }
+
+    lintOptions {
+        checkReleaseBuilds false
+        // Or, if you prefer, you can continue to check for errors in release builds,
+        // but continue the build even when errors are found:
+        abortOnError false
+    }
+
+}
+
+//emas {
+//    channel {
+//        ttids '10000, 10001, 10002'
+//        channelApkName '{ttid}@emasDemo_1.0.apk'
+//    }
+//}
+
+
+dependencies {
+    implementation 'com.android.support.constraint:constraint-layout:1.1.3'
+    compile('com.emas.lib:emas-core:1.0.11-SNAPSHOT@aar') { transitive true }
+    /************基础库 START**********/
+    compile('com.alibaba:fastjson:1.1.54.android@jar') { transitive true }
+    compile('com.taobao.android:mtopsdk_allinone:3.0.8.2-open@jar') { transitive true }
+    compile('com.taobao.android:networksdk:3.3.7-open@jar') { transitive true }
+    compile('com.taobao.android:tnet4android:3.1.14.6@aar') { transitive true }
+    compile('com.taobao.android:utdid4all:1.1.5.3_proguard@jar') { transitive true }
+    /************基础库 END**********/
+
+    /************UPDATE START**********/
+    compile('com.taobao.android:update-datasource:1.0.2-open@jar') { transitive false }
+    compile('com.taobao.android:update-common:1.0.2-open@aar') { transitive false }
+    compile('com.taobao.android:update-manager:1.0.2-open@aar') { transitive false }
+    compile('com.taobao.android:update-adapter:1.0.2-open@jar') { transitive false }
+    compile('com.taobao.android:update-main:1.0.2-open@aar') { transitive false }
+    compile('com.taobao.android:downloader:2.0.2.12@jar') { transitive true }
+    /************UPDATE END**********/
+
+    /************高可用 SDK START**********/
+    compile('com.taobao.android:ut-analytics:1.1.0.1-open@aar') { transitive true }
+    compile('com.alibaba.ha:alihatbadapter:1.1.0.7-open@aar') {
+        transitive true
+        //exclude group:'com.taobao.android', module:'tlog_uploader_oss'
+    }
+    //compile ('com.taobao.android:tlog_uploader_ceph:1.1.0.7-open@aar')
+    //默认oss通道需要依赖oss的三方库
+    compile('com.squareup.okhttp3:okhttp:3.4.1@jar')
+    compile('com.squareup.okio:okio:1.9.0@jar')
+    compile('com.aliyun.dpa:oss-android-sdk:2.4.2@aar')
+    /************高可用 SDK END**********/
+
+    /************配置 SDK START**********/
+    compile('com.taobao.android:orange:2.0.1-emas') {
+        exclude group: 'com.alibaba', module: 'fastjson'
+        transitive true
+    }
+    /************配置 SDK END**********/
+
+    /************通道服务 SDK START**********/
+    compile('com.taobao.android:accs_sdk_taobao:3.3.5.3-open') { transitive true }
+    //compile('com.taobao.android:accs_sdk_taobao:3.3.4.2-ys-SNAPSHOT') { transitive true }
+    /************通道服务 SDK END**********/
+
+    /************推送服务 SDK START**********/
+    //三方通道
+    compile 'com.taobao.android:accs-xiaomi:1.0.9'
+    compile 'com.taobao.android:accs-huawei:1.1.3'
+    compile 'com.taobao.android:accs-oppo:1.0.3'
+    compile('com.taobao.android:accs-meizu:1.0.6') {
+        transitive false
+    }
+    compile 'com.taobao.android:meizu-push:3.8.1@aar'
+    /************推送服务 SDK START**********/
+
+    /************数据分析 SDK START**********/
+    compile('com.alibaba.android.emas:emas-man:1.0.0')
+    /************数据分析 SDK END**********/
+
+    /************SOPHIX START**********/
+    compile('com.aliyun.ams:alicloud-android-hotfix:3.2.4') {
+        exclude group: 'com.aliyun.ams', module: 'alicloud-android-ut'
+    }
+    /************SOPHIX END**********/
+
+    /************公有云推送SDK START**********/
+    compile('com.aliyun.emas:alicloud-android-push:3.1.3.2') {
+        exclude group: 'com.aliyun.ams', module: 'alicloud-android-ut'
+        exclude group: 'com.aliyun.ams', module: 'alicloud-android-utdid'
+    }
+    /************公有云推送SDK END**********/
+
+    /************WEEX SDK START**********/
+    compile("com.taobao.android:weex_sdk:0.18.16.28") { transitive true }
+    compile('com.taobao.android:zcache:0.1.4-open-SNAPSHOT') { transitive true }
+    compile('com.alibaba.mtl:dynamicConfig:0.1.0.10') { transitive true }
+    compile('com.alibaba.mtl:dynamicconfigadapter:0.1.0.10') { transitive true }
+    compile('com.android.support:recyclerview-v7:26.+') { transitive true }
+    compile 'com.android.support:appcompat-v7:26.+'
+    //Weex调试工具，线上发布包无需引入
+    debugCompile 'com.taobao.android:weex_inspector:0.16.7'
+    compile 'com.google.code.findbugs:jsr305:2.0.1'
+    /************WEEX SDK END**********/
+
+    /************WEEX 扩展 START**********/
+    compile("com.emas.weex:emas-weex:1.0.1.4-SNAPSHOT@aar")
+
+    //开源图片库
+    compile 'com.facebook.fresco:fresco:1.5.0'
+    //加载gif动图需添加此库
+    compile 'com.facebook.fresco:animated-gif:1.5.0'
+    //加载webp动图需添加此库
+    compile 'com.facebook.fresco:animated-webp:1.5.0'
+    //支持webp需添加此库
+    compile 'com.facebook.fresco:webpsupport:1.5.0'
+
+    //开源网络库
+    compile 'com.squareup.okhttp3:okhttp:3.4.1'
+    compile 'com.squareup.okhttp3:okhttp-ws:3.4.1'
+    /************WEEX 扩展 END**********/
+
+    /************WEEX-UI 组件库 START**********/
+    //开源weex-ui依赖库
+    compile 'com.alibaba.android:bindingx-core:1.0.9'
+    compile 'com.alibaba.android:bindingx_weex_plugin:1.0.9'
+    /************WEEX-UI 组件库 END**********/
+
+//        /************WEEX 商业组件 START**********/
+//        // EMAS Native组件库，weex组件依赖xbase库，所以需要引入
+        compile ('com.alibaba.emas.xcomponent:xbase:0.0.1')
+//        // EMAS Weex组件库
+        compile ('com.emas.weex:weex-libs:0.0.1')
+        compile ('com.emas.weex:weex-base:0.0.1')
+//        // EMAS weex指纹认证
+        compile ('com.emas.weex:fingerprint:0.0.1')
+//        // EMAS weex手势密码
+        compile ('com.emas.weex:patternlock:0.0.1')
+//        // 友盟社交分享相关库，请到友盟官网下载umeng-share SDK
+//        //xxx
+//        // 友盟社交Weex组件实现
+        compile ('com.alibaba.emas.xcomponent:umeng-social:0.0.1')
+//        // 高德定位SDK
+        compile 'com.amap.api:location:latest.integration'
+//        /************WEEX 商业组件 END**********/
+//
+//        /************WEEX 商业图表 START**********/
+        compile 'org.weex.plugin.weexacechart:wx_acechart:0.0.2@aar'
+        compile 'com.alibaba.dt:acechart:1.1.2.28@aar'
+        compile "com.android.support:support-annotations:26.+"
+        compile ('org.weex.plugin:processor:1.0.2')
+        annotationProcessor "org.weex.plugin:processor:1.0.2"
+//        /************WEEX 商业图表 END**********/
+
+    //其他demo依赖库
+    compile 'com.android.support:design:26.1.0'
+    compile 'com.android.support:cardview-v7:26.1.0'
+    compile("com.taobao.android:native_crash_test:1.0.0.1@aar") { transitive true }
+    compile("com.journeyapps:zxing-android-embedded:3.2.0@aar") { transitive true }
+    compile("com.google.zxing:core:3.2.1@jar") { transitive true }
+
+    //H5容器
+    compile 'com.emas.hybrid:emas-hybrid-android:0.0.8-SNAPSHOT@aar'
+    compile 'com.emas.lib:emas-container-module:0.0.1-SNAPSHOT@aar'
+
+
+}
+
+tasks.whenTaskAdded { task ->
+    if (task.name.contains("DebugAndroidTest")) {
+        task.setEnabled(false);
+    }
+}
+
+apply from: 'common.gradle'
+group = MAVEN_BASE_GROUP
+version = android.defaultConfig.versionName + '-SNAPSHOT'
+apply plugin: 'maven'
+apply plugin: 'maven-publish'
+publishing {
+    publications {
+        maven(MavenPublication) {
+            if (project.gradle.startParameter.toString().contains("Debug")) {
+                artifact "${project.buildDir}/sophix/${project.name}-debug.sar"
+                artifactId MAVEN_BASE_ARTIFACTID + "-debug"
+            } else {
+                artifact "${project.buildDir}/sophix/${project.name}-release.sar"
+                artifactId MAVEN_BASE_ARTIFACTID + "-release"
+            }
+        }
+    }
+
+    repositories {
+        if (version.endsWith("-SNAPSHOT")) {
+            maven {
+                url CUSTOM_REPOSITORY_HOST + "/repository/maven-snapshots/"
+                credentials {
+                    username = CUSTOM_REPOSITORY_USERNAME
+                    password = CUSTOM_REPOSITORY_PASSWORD
+                }
+            }
+        } else {
+            maven {
+                url CUSTOM_REPOSITORY_HOST + "/repository/maven-releases/"
+                credentials {
+                    username = CUSTOM_REPOSITORY_USERNAME
+                    password = CUSTOM_REPOSITORY_PASSWORD
+                }
+            }
+        }
+
+    }
+}
+
+//publishing {
+//
+//    publications {
+//        maven(MavenPublication) {
+//            if (components.hasWithName("java")) {
+//                from components.java
+//            } else if (components.hasWithName("android")) {
+//                from components.android
+//            } else {
+//                artifact  "${project.buildDir}/outputs/aar/${project.name}-release.aar"
+//
+//                pom.withXml {
+//                    def dependenciesNode = asNode().appendNode('dependencies')
+//                    configurations.compile.allDependencies.each {
+//                        if (it.group != null && (it.name != null || "unspecified" == it.name) && it.version != null) {
+//
+//                            def dependencyNode = dependenciesNode.appendNode('dependency')
+//                            dependencyNode.appendNode('groupId', it.group)
+//                            dependencyNode.appendNode('artifactId', it.name)
+//                            dependencyNode.appendNode('version', it.version)
+//                        }
+//                    }
+//                }
+//            }
+//        }
+//    }
+//
+//
+//}
+

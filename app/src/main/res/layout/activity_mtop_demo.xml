@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical" android:layout_width="match_parent"
+              android:focusable="true"
+              android:focusableInTouchMode="true"
+              android:layout_height="match_parent">
+
+    <Button
+        android:id="@+id/activity_mtop_btn_config"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:background="@color/color_bg_one"
+        android:textColor="@color/color_text_blue"
+        android:text="配置mtop请求" />
+
+    <Button
+        android:id="@+id/activity_mtop_btn_send"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:background="@color/color_bg_one"
+        android:textColor="@color/color_text_blue"
+        android:text="发送mtop请求" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TextView
+            android:id="@+id/activity_mtop_tv_console"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+    </ScrollView>
+
+</LinearLayout>

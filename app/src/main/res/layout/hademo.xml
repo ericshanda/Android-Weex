@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="应用信息" />
+
+        <TextView
+            android:id="@+id/appKeyId"
+            android:layout_width="match_parent"
+            android:layout_height="32dp"
+            android:editable="false"
+            android:gravity="top|left"
+            android:maxLines="5"
+            android:minLines="5"
+            android:padding="2dp"
+            android:scrollbars="vertical"
+            android:textSize="8pt"
+            android:textColor="@color/color_text_333"
+            android:text="应用Key" />
+
+        <TextView
+            android:id="@+id/appVersionId"
+            android:layout_width="match_parent"
+            android:layout_height="25dp"
+            android:editable="false"
+            android:gravity="top|left"
+            android:maxLines="5"
+            android:minLines="5"
+            android:padding="2dp"
+            android:scrollbars="vertical"
+            android:textSize="8pt"
+            android:textColor="@color/color_text_333"
+            android:text="应用版本" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="传输协议" />
+
+        <TextView
+            android:id="@+id/httpOrHttps"
+            android:layout_width="match_parent"
+            android:layout_height="27dp"
+            android:editable="false"
+            android:gravity="top|left"
+            android:maxLines="5"
+            android:minLines="5"
+            android:padding="2dp"
+            android:scrollbars="vertical"
+            android:text="http or https"
+            android:textColor="@color/color_text_333"
+            android:textSize="8pt" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/http"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@color/color_bg_one"
+                android:textColor="@color/color_text_blue"
+                android:text="切换到http" />
+
+            <Button
+                android:id="@+id/https"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@color/color_bg_one"
+                android:textColor="@color/color_text_blue"
+                android:text="切换到https" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="域名" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:focusable="true"
+            android:focusableInTouchMode="true">
+
+            <EditText
+                android:id="@+id/host"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:hint="host name"
+                android:text="adash.emas-ha.cn" />
+
+            <Button
+                android:id="@+id/changeHost"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textColor="@color/color_text_blue"
+                android:background="@color/color_bg_one"
+                android:text="变更域名" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="检测客户端-》服务端联通性" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/isLink"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textColor="@color/color_text_333"
+                android:hint="is link"
+                android:textSize="10pt"
+                android:text="true" />
+
+            <Button
+                android:id="@+id/checkLink"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textColor="@color/color_text_blue"
+                android:background="@color/color_bg_one"
+                android:text="点击检测联通性" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="46dp"
+            android:textSize="10pt"
+            android:textColor="@color/color_text_333"
+            android:text="高可用测试实例" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <Button
+                android:id="@+id/javaCrash"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/color_bg_one"
+                android:text="点击崩溃（java）"
+                android:textColor="@color/color_text_blue" />
+
+            <Button
+                android:id="@+id/nativeCrash"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/myNewTheme"
+                android:text="点击崩溃（native）" />
+
+            <Button
+                android:id="@+id/stuck"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/myNewTheme"
+                android:text="主线程卡顿" />
+
+            <Button
+                android:id="@+id/logPrint"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/myNewTheme"
+                android:text="打日志" />
+
+            <Button
+                android:id="@+id/logUpload"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/myNewTheme"
+                android:text="主动上报日志" />
+
+            <Button
+                android:id="@+id/telescope"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/myNewTheme"
+                android:text="上传Event数据" />
+
+            <Button
+                android:id="@+id/appmonitor"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/myNewTheme"
+                android:text="自定义错误埋点" />
+
+            <Button
+                android:id="@+id/jsError"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/myNewTheme"
+                android:text="JS ERROR上报" />
+
+            <Button
+                android:id="@+id/leak"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/myNewTheme"
+                android:text="高可用内存泄露" />
+
+            <Button
+                android:id="@+id/networkMonitor"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/myNewTheme"
+                android:text="网络监控报警" />
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>

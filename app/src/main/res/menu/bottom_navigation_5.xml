@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/bottombar_item_home"
+        android:enabled="true"
+        android:icon="@drawable/bottom_home_selector"
+        android:title="@string/tab1"/>
+    <item
+        android:id="@+id/bottombar_item_filance"
+        android:enabled="true"
+        android:icon="@drawable/bottom_two_selector"
+        android:title="@string/tab2"/>
+    <item
+        android:id="@+id/bottombar_item_life"
+        android:enabled="true"
+        android:icon="@drawable/bottom_three_selector"
+        android:title="@string/tab3"/>
+    <item
+        android:id="@+id/bottombar_item_setting"
+        android:enabled="true"
+        android:icon="@drawable/bottom_four_selelctor"
+        android:title="@string/tab4"/>
+    <item
+        android:id="@+id/bottombar_item_other1"
+        android:enabled="true"
+        android:icon="@drawable/bottom_five_selelctor"
+        android:title="@string/tab5"/>
+</menu>
